@@ -1,0 +1,17 @@
+<div class="mobile-menu-bg-layer"></div>
+<div class="open-btn" (click)="toogleMenu()">
+  <div class="burger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</div>
+<div class="off-canvas">
+  <div class="close-btn" (click)="toogleMenu()">
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <ul>
+    <li *ngFor="let link of menuLinks">{{link.title}}</li>
+  </ul>
+</div>

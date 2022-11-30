@@ -1,0 +1,59 @@
+@import "mixins";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 40px;
+
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('/assets/img/header-m.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
+
+  .layover {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(44, 51, 64, 0.8);
+    z-index: 1100;
+  }
+
+  .bg-image,
+  .layover {
+    height: 500px;
+  }
+
+  @include breakpoint('phone-landscape') {
+    padding-top: 84px;
+  }
+
+  @include breakpoint('tablet') {
+    padding-top: 100px;
+
+    .bg-image,
+    .layover {
+      height: 600px;
+    }
+  }
+
+  @include breakpoint('desktopS') {
+    padding-top: 120px;
+  }
+
+  @include breakpoint('desktopL') {
+    .bg-image,
+    .layover {
+      height: 650px;
+    }
+  }
+}

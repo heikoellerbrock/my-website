@@ -1,0 +1,133 @@
+@import "src/styles/mixins";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  @include shadow();
+
+  .profile-portrait {
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 32px 20px 40px 20px;
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 20px;
+
+      .profile-title {
+        font-size: 2rem;
+        color: #666;
+
+        span {
+          font-size: 2rem;
+          color: cornflowerblue;
+        }
+      }
+
+      .profile-position {
+        color: #666;
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+    }
+
+    .profile-list {
+      list-style-type: none;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+
+      li {
+
+        & + li {
+          margin-top: 20px;
+        }
+
+        span {
+          font-size: 1.4rem;
+
+          &.title {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-social {
+    background-color: cornflowerblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+    }
+
+    i {
+      font-size: 3rem;
+      padding: 10px;
+      color: #fff;
+    }
+  }
+
+  @include breakpoint('phone-landscape') {
+    .profile-content {
+      padding: 40px 20px 52px 20px;
+
+      .profile-info {
+        margin: 0 auto 32px;
+        padding-bottom: 32px;
+      }
+    }
+  }
+
+  @include breakpoint('tablet') {
+    .profile-head {
+      display: flex;
+
+      .profile-portrait {
+        display: flex;
+        flex: 1;
+      }
+
+      .profile-content {
+        padding: 0;
+
+        .profile-info {
+          width: auto;
+          margin: 0 20px 32px;
+          padding: 40px 0 32px 0;
+        }
+
+        .profile-list {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,46 @@
+@import "variables";
+
+:host {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  .center-line {
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    background-color: $colorBlueTransparent;
+  }
+
+  .timeline-items {
+    position: relative;
+  }
+
+  @media all and (min-width: 600px) {
+    .timeline-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .left {
+        margin-bottom: 40px;
+      }
+
+      .left:nth-child(n+2) {
+        margin-top: 40px;
+      }
+
+      .right {
+        margin-top: 40px;
+      }
+
+      .right:nth-child(n+3) {
+        margin-top: 80px;
+      }
+    }
+  }
+}

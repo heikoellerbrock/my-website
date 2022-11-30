@@ -1,0 +1,63 @@
+@import "mixins";
+@import "variables";
+
+:host {
+  display: block;
+  cursor: default;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-top: 4px solid $colorBlue;
+
+  .date {
+    text-align: center;
+    color: cornflowerblue;
+    margin: 8px 0 28px;
+    font-weight: 700;
+
+    span {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+  }
+
+  h2 {
+    border: none;
+    padding: 0;
+    margin: 0 0 4px 0;
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    border: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #878787;
+    letter-spacing: .5px;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  @media all and (min-width: 600px) {
+    flex: 50%;
+    max-width: 46%;
+    padding: 20px;
+    margin-bottom: 0;
+
+    p {
+      text-align: left;
+      font-size: 1.4rem;
+    }
+  }
+
+  @include breakpoint(desktopS) {
+    padding: 20px 32px;
+  }
+}

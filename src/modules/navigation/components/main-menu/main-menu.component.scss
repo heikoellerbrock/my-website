@@ -1,0 +1,31 @@
+@import "mixins";
+
+:host {
+  display: none;
+
+  @include breakpoint(tablet) {
+    display: flex;
+
+    .main-menu {
+      ul {
+        display: flex;
+        list-style-type: none;
+        transition: opacity .5s ease;
+
+        li {
+          padding: 20px 12px;
+          font-size: 1.2rem;
+          transition: color 1s ease;
+        }
+      }
+
+      &.transparent {
+        ul {
+          li {
+            color: rgba(255, 255, 255, .7);
+          }
+        }
+      }
+    }
+  }
+}

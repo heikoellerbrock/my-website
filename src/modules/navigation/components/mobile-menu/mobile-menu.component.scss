@@ -1,0 +1,145 @@
+@import "mixins";
+
+:host {
+
+  .mobile-menu-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    opacity: 0;
+    transition: opacity .6s ease;
+  }
+
+  .open-btn {
+    width: 64px; // To have the correct spaces to right side of viewport
+    height: 60px;
+    cursor: pointer;
+
+    .burger {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+
+      .line {
+        position: absolute;
+        left: 20px;
+        height: 2px;
+        width: 24px;
+        background-color: #333;
+        display: block;
+        transition: background-color 1s ease;
+        transform-origin: center;
+
+        &:nth-child(1) {
+          top: 20px;
+        }
+
+        &:nth-child(2) {
+          top: 28px;
+        }
+
+        &:nth-child(3) {
+          top: 36px;
+        }
+
+      }
+    }
+  }
+
+  .off-canvas {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 285px;
+    background-color: #fff;
+    transition: right .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include shadow();
+
+    .close-btn {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      position: relative;
+      opacity: 0;
+      transition: opacity .5s ease;
+
+      .line {
+        position: absolute;
+        left: 25%;
+        height: 3px;
+        width: 50%;
+        background: #666;
+        border-radius: 2px;
+        display: block;
+        transition: 0.5s;
+        transform-origin: center;
+
+        &:nth-child(1) {
+          top: 27px;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          top: 27px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      opacity: 0;
+      flex-direction: column;
+      transition: opacity .5s ease;
+      width: 100%;
+
+      li {
+        padding: 20px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &.isOpen {
+    .mobile-menu-bg-layer {
+      left: 0;
+      opacity: 1;
+    }
+
+    .off-canvas {
+      right: 0;
+
+      .close-btn {
+        opacity: 1;
+      }
+
+      ul {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.isTransparent {
+    .open-btn {
+      .burger {
+        .line {
+          background-color: rgba(255, 255, 255, .7);
+        }
+      }
+    }
+  }
+
+  @include breakpoint('tablet') {
+    display: none;
+  }
+}

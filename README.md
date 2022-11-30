@@ -1,2 +1,4 @@
-# my-website
-My personal website
+# Website of Heiko Ellerbrock
+
+My personal website, built with Angular.
+
