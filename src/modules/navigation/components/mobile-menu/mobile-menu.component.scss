@@ -1,7 +1,6 @@
 @import "mixins";
 
 :host {
-
   .mobile-menu-bg-layer {
     position: absolute;
     top: 0;
@@ -31,7 +30,7 @@
         left: 20px;
         height: 2px;
         width: 24px;
-        background-color: #333;
+        background-color: #ddd;
         display: block;
         transition: background-color 1s ease;
         transform-origin: center;
@@ -76,7 +75,7 @@
       .line {
         position: absolute;
         left: 25%;
-        height: 3px;
+        height: 2px;
         width: 50%;
         background: #666;
         border-radius: 2px;
@@ -104,8 +103,12 @@
       width: 100%;
 
       li {
-        padding: 20px;
-        font-size: 1.6rem;
+        padding: $space-phone;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(0,0,0,.05);
+        }
       }
     }
   }
@@ -125,16 +128,6 @@
 
       ul {
         opacity: 1;
-      }
-    }
-  }
-
-  &.isTransparent {
-    .open-btn {
-      .burger {
-        .line {
-          background-color: rgba(255, 255, 255, .7);
-        }
       }
     }
   }

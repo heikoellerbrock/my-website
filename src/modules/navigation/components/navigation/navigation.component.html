@@ -1,9 +1,9 @@
-<div class="row">
-  <a class="logo" routerLink="/">
-    <span class="logo-h">h</span>
-    <span class="logo-e">e</span>
+<div class="container">
+  <a class="page-headline" routerLink="/">
+    <h1>Heiko Ellerbrock</h1>
+    <h2>Frontend Engineer</h2>
   </a>
 
-  <app-mobile-menu [isTransparent]="menuIsTransparent"></app-mobile-menu>
-  <app-main-menu [isTransparent]="menuIsTransparent"></app-main-menu>
+  <app-mobile-menu [isTransparent]="pageIsScrolled"></app-mobile-menu>
+  <app-main-menu [isTransparent]="pageIsScrolled"></app-main-menu>
 </div>

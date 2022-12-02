@@ -11,16 +11,16 @@ export class NavigationComponent {
   /**
    * Class used to set complete Navigation to transparent or colored
    */
-  @HostBinding('class.transparent') menuIsTransparent = true;
+  @HostBinding('class.is-scrolled') pageIsScrolled = false;
 
   constructor(private scrollService: WindowScrollService) {
     scrollService.scroll$.subscribe(
       d => {
-        if (d <= 60 && !this.menuIsTransparent) {
-          this.menuIsTransparent = true;
+        if (d <= 120 && this.pageIsScrolled) {
+          this.pageIsScrolled = false;
         }
-        if (d > 60 && this.menuIsTransparent) {
-          this.menuIsTransparent = false;
+        if (d > 120 && !this.pageIsScrolled) {
+          this.pageIsScrolled = true;
         }
       },
       err => {
