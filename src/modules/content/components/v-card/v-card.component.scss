@@ -21,115 +21,60 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 32px 20px 40px 20px;
-
-    &__info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 20px;
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto 20px;
-
-      h1 {
-        font-size: 2rem;
-        color: #666;
-
-        span {
-          font-size: 2rem;
-          color: cornflowerblue;
-        }
-      }
-
-      h2 {
-        color: #666;
-        letter-spacing: 1px;
-        font-size: 1.4rem;
-        margin: 0;
-        padding: 0;
-        border: none;
-      }
-    }
-
-    &__list {
-      list-style-type: none;
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-
-      li {
-
-        & + li {
-          margin-top: 20px;
-        }
-
-        span {
-          font-size: 1.4rem;
-
-          &.title {
-            font-weight: 700;
-            display: block;
-            margin-bottom: 4px;
-          }
-        }
-      }
-    }
+    padding: 32px $space-phone;
   }
 
-  .v-card-social {
-    background-color: cornflowerblue;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+  .v-card__contact {
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: $color-primary-blue;
 
-    a {
-      text-decoration: none;
+    h2 {
+      text-align: center;
+      color: #fff;
+      padding: $space-phone * 2 $space-phone $space-phone;
+      cursor: default;
+    }
+    ul {
+      padding: 0 $space-phone;
+      list-style-type: none;
+
+      li {
+        padding: 4px 0;
+        text-align: center;
+        color: #ddd;
+        cursor: default;
+      }
     }
 
-    i {
-      font-size: 3rem;
-      padding: 10px;
-      color: #fff;
+    &-social {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding-bottom: $space-phone;
+
+      a {
+        text-decoration: none;
+        padding: $space-phone;
+        border-radius: 4px;
+        &:hover {
+          background-color: rgba(255,255,255,.1);
+        }
+      }
+
+      i {
+        font-size: 2rem;
+        color: #fff;
+      }
     }
   }
 
   @include breakpoint('phone-landscape') {
-    .v-card-content {
-      padding: 40px 20px 52px 20px;
 
-      .v-card-info {
-        margin: 0 auto 32px;
-        padding-bottom: 32px;
-      }
-    }
   }
 
   @include breakpoint('tablet') {
-    .v-card-head {
-      display: flex;
 
-      .v-card-portrait {
-        display: flex;
-        flex: 1;
-      }
-
-      .v-card-content {
-        padding: 0;
-
-        .v-card-info {
-          width: auto;
-          margin: 0 20px 32px;
-          padding: 40px 0 32px 0;
-        }
-
-        .v-card-list {
-          padding: 0 20px;
-        }
-      }
-    }
   }
 
 }
