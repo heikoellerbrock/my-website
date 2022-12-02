@@ -8,30 +8,8 @@
   width: 100%;
   padding-top: 60px;
   margin-bottom: 40px;
+  background-color: $color-primary-blue;
 
-  .bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-image: url('/assets/img/header-m.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1000;
-  }
-
-  .layover {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    background-color: rgba(44, 51, 64, 0.8);
-    z-index: 1100;
-  }
-
-  .bg-image,
-  .layover {
-    height: 500px;
-  }
 
   @include breakpoint('phone-landscape') {
     padding-top: 84px;
