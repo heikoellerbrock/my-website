@@ -67,20 +67,18 @@ ul {
   }
 }
 
-@include breakpoint('phone-landscape') {
-  * {
-    font-size: 11px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
 }
 
 @include breakpoint('tablet') {
   * {
-    font-size: 12px;
-  }
-}
-
-@include breakpoint('desktop') {
-  * {
-    font-size: 13px;
+    font-size: 16px;
   }
 }

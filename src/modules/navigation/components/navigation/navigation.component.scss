@@ -15,12 +15,7 @@
   @include shadow();
 
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 960px;
-    height: 100%;
+    flex-direction: row;
   }
 
   a.page-headline {
@@ -47,7 +42,19 @@
     }
   }
 
-  @include breakpoint('phone-landscape') {
-    padding: 12px 0;
+  @include breakpoint('tablet') {
+    height: 80px;
+
+    a.page-headline {
+      padding: 0 $space-tablet;
+
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      h2 {
+        font-size: .9rem;
+      }
+    }
   }
 }

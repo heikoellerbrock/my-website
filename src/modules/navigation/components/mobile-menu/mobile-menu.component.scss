@@ -132,7 +132,7 @@
     }
   }
 
-  @include breakpoint('tablet') {
+  @include breakpoint('desktop') {
     display: none;
   }
 }

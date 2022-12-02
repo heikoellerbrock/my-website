@@ -3,7 +3,7 @@
 :host {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-color: #fff;
   @include shadow();
 
@@ -14,6 +14,28 @@
     img {
       width: 100%;
       max-width: 400px;
+    }
+
+    &.big {
+      @include breakpoint('phone-landscape') {
+        display: none;
+      }
+    }
+
+    &.small {
+      display: none;
+      float: right;
+      width: 150px;
+      padding: 0 0 $space-phone $space-phone;
+
+      @include breakpoint('phone-landscape') {
+        display: inline;
+      }
+
+      @include breakpoint('tablet') {
+        width: 260px;
+        padding: 0 0 $space-tablet $space-tablet;
+      }
     }
   }
 
@@ -69,12 +91,10 @@
     }
   }
 
-  @include breakpoint('phone-landscape') {
-
-  }
-
   @include breakpoint('tablet') {
-
+    .v-card-content {
+      padding: 32px $space-tablet;
+    }
   }
 
 }

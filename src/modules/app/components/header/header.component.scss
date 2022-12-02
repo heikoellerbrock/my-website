@@ -9,27 +9,7 @@
   padding-top: 60px;
   margin-bottom: 40px;
 
-  @include breakpoint('phone-landscape') {
-    padding-top: 84px;
-  }
-
   @include breakpoint('tablet') {
-    padding-top: 100px;
-
-    .bg-image,
-    .layover {
-      height: 600px;
-    }
-  }
-
-  @include breakpoint('desktopS') {
-    padding-top: 120px;
-  }
-
-  @include breakpoint('desktopL') {
-    .bg-image,
-    .layover {
-      height: 650px;
-    }
+    padding-top: 80px;
   }
 }
