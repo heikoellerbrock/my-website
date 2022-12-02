@@ -1,37 +1,35 @@
-<div class="profile-head">
-  <div class="profile-portrait">
-    <img
-      src="../../../../assets/img/portrait-M.JPG"
-      srcset="../../../../assets/img/portrait-S.JPG 600w, assets/img/portrait-M.JPG 960w, assets/img/portrait-L.JPG 2400w"
-      alt="Portrait von Heiko Ellerbrock"
-    />
-  </div>
-  <div class="profile-content">
-    <div class="profile-info">
-      <h1 class="profile-title">Heiko <span>Ellerbrock</span></h1>
-      <h2 class="profile-position">Softwareentwickler</h2>
-    </div>
-    <ul class="profile-list">
-      <li>
-        <span class="title">Alter</span>
-        <span class="content" [innerHTML]="getAge()"></span>
-      </li>
-      <li>
-        <span class="title">Adresse</span>
-        <span class="content">Kölner Str. 7a, 50226 Frechen</span>
-      </li>
-      <li>
-        <span class="title">Email</span>
-        <span class="content">info@heikoellerbrock.de</span>
-      </li>
-      <li>
-        <span class="title">Mobil</span>
-        <span class="content">0172 6174800</span>
-      </li>
-    </ul>
-  </div>
+<div class="v-card-portrait">
+  <img
+    src="../../../../assets/img/portrait-M.JPG"
+    srcset="../../../../assets/img/portrait-S.JPG 600w, assets/img/portrait-M.JPG 960w, assets/img/portrait-L.JPG 2400w"
+    alt="Portrait von Heiko Ellerbrock"
+  />
 </div>
-<div class="profile-social">
+<div class="v-card-content">
+  <div class="v-card-content__info">
+    <h1>Heiko <span>Ellerbrock</span></h1>
+    <h2>Softwareentwickler</h2>
+  </div>
+  <ul class="v-card-content__list">
+    <li>
+      <span class="title">Alter</span>
+      <span [innerHTML]="getAge()"></span>
+    </li>
+    <li>
+      <span class="title">Adresse</span>
+      <span>Kölner Str. 7a, 50226 Frechen</span>
+    </li>
+    <li>
+      <span class="title">Email</span>
+      <span>info@heikoellerbrock.de</span>
+    </li>
+    <li>
+      <span class="title">Mobil</span>
+      <span>0172 6174800</span>
+    </li>
+  </ul>
+</div>
+<div class="v-card-social">
   <a href="https://www.linkedin.com/in/heiko-ellerbrock-a57643157/" target="_blank"><i
     class="icofont-linkedin linkedin"></i></a>
   <a href="https://www.xing.com/profile/Heiko_Ellerbrock2/cv" target="_blank"><i class="icofont-xing linkedin"></i></a>

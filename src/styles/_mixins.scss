@@ -12,7 +12,7 @@
     }
   }
   @if $p == desktopS {
-    @media all and (min-width: $desktopS) {
+    @media all and (min-width: $desktop-s) {
       @content
     }
   }
@@ -22,12 +22,12 @@
     }
   }
   @if $p == desktopL {
-    @media all and (min-width: $desktopL) {
+    @media all and (min-width: $desktop-l) {
       @content
     }
   }
   @if $p == desktopXL {
-    @media all and (min-width: $desktopXL) {
+    @media all and (min-width: $desktop-xl) {
       @content
     }
   }

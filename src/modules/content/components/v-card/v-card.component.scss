@@ -1,12 +1,14 @@
 @import "src/styles/mixins";
 
 :host {
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   @include shadow();
 
-  .profile-portrait {
+  .v-card-portrait {
+    width: 100%;
     text-align: center;
 
     img {
@@ -15,13 +17,13 @@
     }
   }
 
-  .profile-content {
+  .v-card-content {
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 32px 20px 40px 20px;
 
-    .profile-info {
+    &__info {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -31,7 +33,7 @@
       max-width: 400px;
       margin: 0 auto 20px;
 
-      .profile-title {
+      h1 {
         font-size: 2rem;
         color: #666;
 
@@ -41,7 +43,7 @@
         }
       }
 
-      .profile-position {
+      h2 {
         color: #666;
         letter-spacing: 1px;
         font-size: 1.4rem;
@@ -51,7 +53,7 @@
       }
     }
 
-    .profile-list {
+    &__list {
       list-style-type: none;
       width: 100%;
       max-width: 400px;
@@ -76,7 +78,7 @@
     }
   }
 
-  .profile-social {
+  .v-card-social {
     background-color: cornflowerblue;
     padding: 20px;
     display: flex;
@@ -95,10 +97,10 @@
   }
 
   @include breakpoint('phone-landscape') {
-    .profile-content {
+    .v-card-content {
       padding: 40px 20px 52px 20px;
 
-      .profile-info {
+      .v-card-info {
         margin: 0 auto 32px;
         padding-bottom: 32px;
       }
@@ -106,24 +108,24 @@
   }
 
   @include breakpoint('tablet') {
-    .profile-head {
+    .v-card-head {
       display: flex;
 
-      .profile-portrait {
+      .v-card-portrait {
         display: flex;
         flex: 1;
       }
 
-      .profile-content {
+      .v-card-content {
         padding: 0;
 
-        .profile-info {
+        .v-card-info {
           width: auto;
           margin: 0 20px 32px;
           padding: 40px 0 32px 0;
         }
 
-        .profile-list {
+        .v-card-list {
           padding: 0 20px;
         }
       }

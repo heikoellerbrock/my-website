@@ -1,15 +1,20 @@
 // COLORS
-$bigStone: rgba(26, 46, 68, 1);
-$cornflowerBlue: rgba(100, 149, 237, 1);
+$big-stone: rgba(26, 46, 68, 1);
+$cornflower-blue: rgba(100, 149, 237, 1);
 
-/* BREAKPOINTS*/
+// SPACES
+$space-phone: 12px;
+$space-tablet: 16px;
+$space-desktop: 20px;
+
+//BREAKPOINTS
 $phone-landscape: '425px';
 $tablet: '768px';
-$desktopS: '960px';
+$desktop-s: '960px';
 $desktop: '1024px';
-$desktopL: '1200px';
-$desktopXL: '1440px';
+$desktop-l: '1200px';
+$desktop-xl: '1440px';
 
-$color-primary-blue: $bigStone;
-$colorBlue: $cornflowerBlue;
-$colorBlueTransparent: rgba(100, 149, 237, .3);
+$color-primary-blue: $big-stone;
+$color-blue: $cornflower-blue;
+$color-blue-transparent: rgba(100, 149, 237, .3);
