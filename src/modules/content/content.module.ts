@@ -1,14 +1,14 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {VCardComponent} from './components/v-card/v-card.component';
-import {AboutMeComponent} from './components/about-me/about-me.component';
-import {ServicesComponent} from './components/services/services.component';
-import {PortfolioComponent} from './components/portfolio/portfolio.component';
-import {WorkingExperienceComponent} from './components/working-experience/working-experience.component';
-import {EducationComponent} from './components/education/education.component';
-import {SkillsComponent} from './components/skills/skills.component';
-import {UiTimelineModule} from '../ui-timeline/ui-timeline.module';
-import {UiFloatingBarModule} from '../ui-floating-bar/ui-floating-bar.module';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { VCardComponent } from "./components/v-card/v-card.component";
+import { AboutMeComponent } from "./components/about-me/about-me.component";
+import { ServicesComponent } from "./components/services/services.component";
+import { WorkingExperienceComponent } from "./components/working-experience/working-experience.component";
+import { EducationComponent } from "./components/education/education.component";
+import { SkillsComponent } from "./components/skills/skills.component";
+import { UiTimelineModule } from "../ui-timeline/ui-timeline.module";
+import { UiFloatingBarModule } from "../ui-floating-bar/ui-floating-bar.module";
+import { ProjectListComponent } from "./components/project-list/project-list.component";
 
 @NgModule({
   imports: [
@@ -20,7 +20,7 @@ import {UiFloatingBarModule} from '../ui-floating-bar/ui-floating-bar.module';
     VCardComponent,
     AboutMeComponent,
     ServicesComponent,
-    PortfolioComponent,
+    ProjectListComponent,
     WorkingExperienceComponent,
     EducationComponent,
     SkillsComponent
@@ -29,7 +29,7 @@ import {UiFloatingBarModule} from '../ui-floating-bar/ui-floating-bar.module';
     VCardComponent,
     AboutMeComponent,
     ServicesComponent,
-    PortfolioComponent,
+    ProjectListComponent,
     SkillsComponent,
     WorkingExperienceComponent,
     EducationComponent

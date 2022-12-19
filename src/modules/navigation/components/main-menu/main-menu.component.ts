@@ -10,6 +10,7 @@ export class MainMenuComponent {
   constructor(private navigationService: NavigationService) {
   }
 
+  // TODO: - routerLink to navigation links in mobile and desktop navigation
   get menuLinks() {
     return this.navigationService.menuLinks;
   }

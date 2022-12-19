@@ -9,22 +9,22 @@ export class NavigationService {
       title: 'V-Card'
     },
     {
-      title: 'Über mich'
+      title: 'Persönliches'
     },
     {
       title: 'Skills'
     },
     {
-      title: 'Services'
+      title: 'Dienstleistungen'
     },
     {
-      title: 'Portfolio'
+      title: 'Projekte'
     },
     {
-      title: 'Berufserfahrung'
+      title: 'Beruflicher Werdegang'
     },
     {
-      title: 'Berufsausbildung'
+      title: 'Ausbildung'
     }
   ]
 
