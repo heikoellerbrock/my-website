@@ -14,14 +14,14 @@
     align-items: center;
 
     & + .row {
-      margin-top: 40px;
+      margin-top: $space-phone;
     }
 
     .col {
       max-width: 360px;
 
       & + .col {
-        margin: 40px 0 0 0;
+        margin-top: $space-phone;
       }
     }
   }
