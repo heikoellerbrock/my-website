@@ -1,67 +1,71 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ContentService {
   private readonly experience = [
     {
-      yearStart: new Date(2011, 5),
+      yearStart: new Date(2021, 9),
       yearEnd: new Date(),
-      companyName: 'Selbständiger Softwareentwickler',
-      workTitle: '',
-      workDescription: 'Unterstützung kleiner bis großer Unternehmen durch Beratung, Planung und Umsetzung ihrer Web-Projekte.'
+      company: "Selbständig",
+      title: "Freelancer Frontend Developer",
+      technologies: "siehe Technologien und letzte Projekte"
+    },
+    {
+      yearStart: new Date(2011, 5),
+      yearEnd: new Date(2021, 8),
+      company: "Selbständig",
+      title: "Freelancer Webentwicklung",
+      technologies: "Angular, JavaScript (ES5/6), HTML 5, CSS 3, SCSS, NodeJS, Wordpress"
     },
     {
       yearStart: new Date(2019, 9),
       yearEnd: new Date(2021, 11),
-      companyName: 'brandung GmbH',
-      workTitle: 'Business Director',
-      workDescription: 'Betriebswirtschaftliche, disziplinarische und fachliche Leitung eines ca. zwanzigköpfigen Teams in ' +
-        'der Webentwicklung. Technische Verantwortung bei der Planung und Integration von Applikationen in bestehende ' +
-        'System-Architekturen. Unterstützung der Geschäftsführung hinsichtlich strategischer Ausrichtung des Teams.'
+      company: "brandung GmbH",
+      title: "Business Director",
+      technologies: "siehe Technologien und letzte Projekte"
     },
     {
       yearStart: new Date(2018, 11),
       yearEnd: new Date(2019, 9),
-      companyName: 'brandung GmbH',
-      workTitle: 'Teamleiter Frontend',
-      workDescription: 'Fachliche Leitung eines ca. siebenköpfigen Teams von Entwicklern im Bereich Frontend.'
+      company: "brandung GmbH",
+      title: "Teamleiter Frontend",
+      technologies: "siehe Technologien und letzte Projekte"
     },
     {
       yearStart: new Date(2017, 6),
       yearEnd: new Date(2018, 10),
-      companyName: 'dimedis GmbH',
-      workTitle: 'Teamleiter Frontend',
-      workDescription: 'Fachliche Leitung eines ca. siebenköpfigen Teams von Entwicklern im Bereich Frontend.'
+      company: "dimedis GmbH",
+      title: "Teamleiter Frontend",
+      technologies: "Angular, JavaScript (ES6), HTML 5, CSS 3, SCSS, Webpack"
     },
     {
       yearStart: new Date(2016, 11),
       yearEnd: new Date(2017, 5),
-      companyName: 'meinestadt GmbH',
-      workTitle: 'Webentwickler Frontend',
-      workDescription: 'Frontend'
+      company: "meinestadt GmbH",
+      title: "Webentwickler Frontend",
+      technologies: "Angular, JavaScript (ES6), HTML 5, CSS 3, SCSS, Java"
     },
     {
       yearStart: new Date(2016, 2),
       yearEnd: new Date(2016, 10),
-      companyName: 'Moneymeets GmbH',
-      workTitle: 'Webentwickler Frontend',
-      workDescription: 'Frontend'
+      company: "Moneymeets GmbH",
+      title: "Webentwickler Frontend",
+      technologies: "Angular, JavaScript (ES6), HTML, CSS, SCSS"
     },
     {
       yearStart: new Date(2013, 6),
       yearEnd: new Date(2016, 1),
-      companyName: 'Kienbaum Consultants International GmbH',
-      workTitle: 'Webentwickler Frontend',
-      workDescription: 'Frontend'
+      company: "Kienbaum Consultants International GmbH",
+      title: "Webentwickler Frontend",
+      technologies: "C#, AngularJS, JavaScript (ES5), HTML, CSS, SCSS"
     },
     {
       yearStart: new Date(2005, 5),
       yearEnd: new Date(2010, 4),
-      companyName: 'ifa Systems GmbH',
-      workTitle: 'Projektmanager international',
-      workDescription: 'Betreuung von Kunden und Projekten regional und überregional im Bereich Ophthalmologie.'
+      company: "ifa Systems GmbH",
+      title: "Projektmanager international"
     }
   ];
 

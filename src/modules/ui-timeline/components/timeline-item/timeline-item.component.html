@@ -1,7 +1,8 @@
-<span class="arrow"></span>
-<div class="date">
-  <span class="from">{{item?.yearStart?.getFullYear()}}</span><span> - </span><span class="from">{{item?.yearEnd?.getFullYear()}}</span>
+<p class="date">{{displayDate(item.yearStart)}} - {{displayDate(item.yearEnd)}}</p>
+<div class="content">
+  <h2 [innerHTML]="item.title"></h2>
+  <h3 [innerHTML]="item.company"></h3>
+  <p *ngIf="item.technologies" class="technologies">
+    {{item.technologies}}
+  </p>
 </div>
-<h2 class="company" [innerHTML]="item?.companyName"></h2>
-<h3 class="title" [innerHTML]="item?.workTitle"></h3>
-<p class="description" [innerHTML]="item?.workDescription"></p>

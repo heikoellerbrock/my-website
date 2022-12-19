@@ -6,15 +6,15 @@ export class Timeline {
 export class TimelineItem {
   yearStart: Date;
   yearEnd: Date;
-  companyName: string;
-  workTitle: string;
-  workDescription: string;
+  company: string;
+  title: string;
+  technologies: string;
 
   constructor(data: TimelineItem) {
     this.yearStart = data.yearStart;
     this.yearEnd = data.yearEnd;
-    this.companyName = data.companyName;
-    this.workTitle = data.workTitle;
-    this.workDescription = data.workDescription;
+    this.company = data.company;
+    this.title = data.title;
+    this.technologies = data.technologies;
   }
 }
