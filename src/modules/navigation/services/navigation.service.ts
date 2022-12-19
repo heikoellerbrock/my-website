@@ -12,7 +12,7 @@ export class NavigationService {
       title: 'Persönliches'
     },
     {
-      title: 'Skills'
+      title: 'Technologien'
     },
     {
       title: 'Dienstleistungen'

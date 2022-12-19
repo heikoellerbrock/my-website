@@ -5,16 +5,14 @@ import { AboutMeComponent } from "./components/about-me/about-me.component";
 import { ServicesComponent } from "./components/services/services.component";
 import { WorkingExperienceComponent } from "./components/working-experience/working-experience.component";
 import { EducationComponent } from "./components/education/education.component";
-import { SkillsComponent } from "./components/skills/skills.component";
 import { UiTimelineModule } from "../ui-timeline/ui-timeline.module";
-import { UiFloatingBarModule } from "../ui-floating-bar/ui-floating-bar.module";
 import { ProjectListComponent } from "./components/project-list/project-list.component";
+import { TechnologiesComponent } from "./components/technologies/technologies.component";
 
 @NgModule({
   imports: [
     CommonModule,
-    UiTimelineModule,
-    UiFloatingBarModule
+    UiTimelineModule
   ],
   declarations: [
     VCardComponent,
@@ -23,14 +21,14 @@ import { ProjectListComponent } from "./components/project-list/project-list.com
     ProjectListComponent,
     WorkingExperienceComponent,
     EducationComponent,
-    SkillsComponent
+    TechnologiesComponent
   ],
   exports: [
     VCardComponent,
     AboutMeComponent,
     ServicesComponent,
     ProjectListComponent,
-    SkillsComponent,
+    TechnologiesComponent,
     WorkingExperienceComponent,
     EducationComponent
   ]
