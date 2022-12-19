@@ -7,6 +7,8 @@ import { NavigationService } from "../../services/navigation.service";
   styleUrls: ["./mobile-menu.component.scss"]
 })
 export class MobileMenuComponent {
+  //TODO: Click on background to close
+
   @HostBinding("class.isOpen") open = false;
 
   constructor(private navigationService: NavigationService) {

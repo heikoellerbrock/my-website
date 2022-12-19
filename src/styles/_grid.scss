@@ -1,10 +1,14 @@
-.row {
+.container {
   width: 100%;
   max-width: 960px;
-  padding: 0 $space-phone;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
 
   & + .row {
-    margin-top: 40px;
+    margin-top: $space-phone;
   }
 
   .row {
@@ -25,12 +29,7 @@
     }
   }
 
-  @media all and (min-width: 600px) {
-
-    & + .row {
-      margin-top: 60px;
-    }
-
+  @include breakpoint('tablet') {
     .row {
       display: flex;
       flex-direction: row;

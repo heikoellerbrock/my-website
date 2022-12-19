@@ -1,4 +1,8 @@
+@import "variables";
+
 :host {
-  display: block;
+  display: flex;
   width: 100%;
+  flex-direction: column;
+  padding: 0 $space-phone 32px;
 }
