@@ -4,8 +4,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #fff;
   @include shadow();
+  background-color: #fff;
 
   .v-card {
     &__content {
@@ -21,10 +21,10 @@
 
       &-portrait {
         display: flex;
+        justify-content: center;
 
         img {
           width: 100%;
-          max-width: 400px;
         }
       }
 
@@ -100,11 +100,18 @@
   @include breakpoint('tablet') {
     .v-card {
       &__content {
+        flex: 1;
         .wrapper {
           flex-direction: row;
         }
 
+        &-description {
+          flex: 1;
+        }
+
         &-portrait {
+          flex-direction: column;
+          justify-content: flex-start;
           margin-left: $space-tablet;
         }
       }

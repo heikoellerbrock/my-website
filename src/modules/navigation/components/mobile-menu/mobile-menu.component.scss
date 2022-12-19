@@ -14,13 +14,15 @@
 
   .open-btn {
     width: 64px; // To have the correct spaces to right side of viewport
-    height: 60px;
+    height: 100%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 
     .burger {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 60px;
       position: relative;
       margin-left: auto;
       margin-right: auto;
