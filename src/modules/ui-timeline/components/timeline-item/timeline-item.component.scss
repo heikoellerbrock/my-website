@@ -16,7 +16,7 @@
 
   p.date {
     text-align: center;
-    margin-bottom: $space-phone;
+    margin-bottom: var(--space);
     color: #fff;
     background-color: $color-secondary;
     padding: $space-phone / 2 0;
@@ -36,9 +36,9 @@
 
   h3 {
     padding: 0;
-    margin: 0 0 12px 0;
+    margin: 0 0 16px 0;
     font-size: 1rem;
-    color: #878787;
+    color: $color-gray-light;
     text-align: center;
   }
 
@@ -46,6 +46,7 @@
     text-align: center;
     font-size: .8rem;
     font-weight: 500;
+    color: $color-gray;
   }
 
 
@@ -59,9 +60,5 @@
       text-align: left;
       font-size: 1.4rem;
     }
-  }
-
-  @include breakpoint(desktopS) {
-    padding: 20px 32px;
   }
 }
