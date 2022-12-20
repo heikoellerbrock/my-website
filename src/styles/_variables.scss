@@ -2,6 +2,7 @@
 $big-stone: rgba(26, 46, 68, 1);
 $cornflower-blue: rgba(100, 149, 237, 1);
 $flush-orange: rgba(255, 131, 0, 1);
+$abbey: rgba(76, 79, 86, 1);
 
 // SPACES
 $space-phone: 12px;
@@ -18,5 +19,6 @@ $desktop-xl: '1440px';
 
 $color-primary: $big-stone;
 $color-secondary: $flush-orange;
+$color-secondary-l30: lighten($flush-orange, 30%);
 $color-blue: $cornflower-blue;
 $color-blue-transparent: rgba(100, 149, 237, .3);

@@ -5,4 +5,33 @@
   width: 100%;
   flex-direction: column;
   padding: 0 $space-phone 32px;
+
+  ul {
+    margin: 0 0 32px 0;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-weight: 500;
+      margin: 0;
+
+      & + li {
+        margin-top: 12px;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 4px 0 0 0;
+
+        li {
+          font-weight: 400;
+          font-size: .9rem;
+
+          & + li {
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
 }

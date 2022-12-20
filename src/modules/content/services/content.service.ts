@@ -8,30 +8,30 @@ export class ContentService {
     {
       yearStart: new Date(2021, 9),
       yearEnd: new Date(),
-      company: "Selbständig",
-      title: "Freelancer Frontend Developer",
-      technologies: "siehe Technologien und letzte Projekte"
+      company: "Freelancer",
+      title: "Senior Frontend Engineer",
+      technologies: "Tech-Stack siehe Technologien und Projekte."
     },
     {
       yearStart: new Date(2011, 5),
       yearEnd: new Date(2021, 8),
-      company: "Selbständig",
-      title: "Freelancer Webentwicklung",
-      technologies: "Angular, JavaScript (ES5/6), HTML 5, CSS 3, SCSS, NodeJS, Wordpress"
+      company: "Freelancer",
+      title: "Fullstack Webentwickler",
+      technologies: "Angular, JavaScript (ES5/6), HTML 5, CSS 3, SCSS, NodeJS, Wordpress, PHP"
     },
     {
       yearStart: new Date(2019, 9),
       yearEnd: new Date(2021, 11),
       company: "brandung GmbH",
       title: "Business Director",
-      technologies: "siehe Technologien und letzte Projekte"
+      technologies: "Tech-Stack siehe Technologien und Projekte."
     },
     {
       yearStart: new Date(2018, 11),
       yearEnd: new Date(2019, 9),
       company: "brandung GmbH",
       title: "Teamleiter Frontend",
-      technologies: "siehe Technologien und letzte Projekte"
+      technologies: "Tech-Stack siehe Technologien und Projekte."
     },
     {
       yearStart: new Date(2017, 6),
